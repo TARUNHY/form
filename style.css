@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(107, 31, 31);
+    margin: 0px;
+    min-height: 100vh;
+
+
+
+}
+.formValidation{
+    background-color:white;
+    
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+.heading{
+    background-color: transparent;
+    padding: 20px 40px;
+    border-bottom: 3px solid whitesmoke ;
+}
+.heading h1{
+    text-align: center;
+    color: #c40303;
+}
+.form{
+    padding: 30px 40px;
+}
+.feild{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.feild label{
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+
+.feild input:not(.terms){
+    display: block;
+    border: 4px;
+    border: 2px solid #f0f0f0;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.feild span{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.feild small{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+.button{
+    background-image: linear-gradient(to right, #fe5f09 50%, #c40303 100%); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.button:hover{
+    background: red;
+}
+.feild.success input{
+    border-color:rgb(4, 251, 86);
+}
+.feild.error input{
+    border-color: red;
+}
+.feild.success span.success{
+    color: rgb(5, 250, 124);
+    visibility: visible;
+}
+.feild.error span.error{
+    color: red;
+    visibility: visible;
+}
+.feild.error span.success{
+    visibility: none;
+}
+.feild.success span.error{
+    visibility: none;
+}
+.feild.error small{
+    visibility: visible;
+    color: red;
+}
+
